@@ -1,0 +1,38 @@
+#header {
+    text-align: center;
+}
+
+#main
+{
+justify-content: space-around;
+}
+
+.item {
+    padding-top: 5px;
+}
+
+.title {
+    padding-top: 8px;
+}
+
+.item,
+.title {
+    text-align: center;
+}
+
+input {
+    width: 48px;
+}
+
+#new-item {
+    width: max-content;
+}
+
+#new-item-cost {
+    width: 60px;
+}
+
+#new-item-input,
+#new-item-cost {
+    width: max-content;
+}

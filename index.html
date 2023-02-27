@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Shopping Cart</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div id="main" class="row">
+        <h1 id="header" class="col-xs-12">Shopping Cart</h1>
+        <div id="menu" class="title col-xs-6 col-md-3">
+          <h2 class="title">Menu</h2>
+          <h4 class="item menu-item">Hamburger</h4>
+          <h4 class="item menu-item">Cheeseburger</h4>
+          <h4 class="item menu-item">Filet Fish</h4>
+          <h4 class="item menu-item">Milk</h4>
+          <h4 class="item menu-item">Orange Juice</h4>
+          <h4 class="item menu-item">Coca-Cola</h4>
+        </div>
+        <div id="costs" class="title col-xs-6 col-md-3">
+          <h2 class="title"> Cost</h2>
+          <h4 class="item menu-item-cost">$3.00</h4>
+          <h4 class="item menu-item-cost">$3.50</h4>
+          <h4 class="item menu-item-cost">$4.00</h4>
+          <h4 class="item menu-item-cost">$2.00</h4>
+          <h4 class="item menu-item-cost">$2.00</h4>
+          <h4 class="item menu-item-cost">$2.00</h4>
+        </div>
+        <div id="quantities" class="title col-xs-6 col-md-3">
+          <h2 class="title">Quantity</h2>
+          <div class="item quantity-column">
+            <input type="number" min="0" class="menu-item-quantity" step="1" value="0">
+            <button class="cancel-item-button">cancel</button>
+          </div>
+          <div class="item quantity-column">
+            <input type="number" min="0" class="menu-item-quantity" step="1" value="0">
+            <button class="cancel-item-button">cancel</button>
+          </div>
+          <div class="item quantity-column">
+            <input type="number" min="0" class="menu-item-quantity" step="1" value="0">
+            <button class="cancel-item-button">cancel</button>
+          </div>
+          <div class="item quantity-column">
+            <input type="number" min="0" class="menu-item-quantity" step="1" value="0">
+            <button class="cancel-item-button">cancel</button>
+          </div>
+          <div class="item quantity-column">
+            <input type="number" min="0" class="menu-item-quantity" step="1" value="0">
+            <button class="cancel-item-button">cancel</button>
+          </div>
+          <div class="item quantity-column">
+            <input type="number" min="0" class="menu-item-quantity" step="1" value="0">
+            <button class="cancel-item-button">cancel</button>
+          </div>
+
+        </div>
+        <div id="totals" class="col-xs-6 col-md-3">
+          <h2 class="title">Totals</h2>
+          <h4 class="item menu-item-total">$0.00</h4>
+          <h4 class="item menu-item-total">$0.00</h4>
+          <h4 class="item menu-item-total">$0.00</h4>
+          <h4 class="item menu-item-total">$0.00</h4>
+          <h4 class="item menu-item-total">$0.00</h4>
+          <h4 class="item menu-item-total">$0.00</h4>
+        </div>
+        <div class=" col-xs-12">
+          <div id="creation" class="row d-flex justify-content-around">
+            <div class="creation-item col-xs-12 col-md-4" align="center">
+              <label>
+                <h4>New Item:</h4>
+              </label>
+              <input id="new-item-input" type="text" value="">
+            </div>
+            <div class="creation-item col-xs-12 col-md-4" align="center">
+              <label>
+                <h4>Cost:</h4>
+              </label>
+              <input id="new-item-cost" type="number" min="0" step=".25" value="0.00">
+            </div>
+            <div class="creation-item col-xs-12 col-md-4" align="center">
+              <button id="create-button">Create</button>
+            </div>
+          </div>
+        </div>
+        <div id="total-line" class="col-xs-12" align="center">
+          <h1>Total Price:</h1>
+          <h1 id="total-price">$0</h1>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </body>
+
+</html>
